@@ -1,0 +1,12 @@
+	<div class="sheet" id="createCategory">
+		<a href="javascript: closeModal();"><div class="close"></div></a>
+		<h1>New Category</h1>
+		<div class="modalContent">
+			<form action="addCategory" method="post" onsubmit="return checkAddCategorySubmit();">
+				<p class="error"></p>
+				<div class="input"><input type="text" name="name" /></div>
+				<textarea name="desc"></textarea>
+				<input type="submit" class="button black" value="Create" />
+			</form>
+		</div>
+	</div>

@@ -1,0 +1,16 @@
+This is a readme provided by Thanaporn to describe things on data hierarchy I made
+
+1. I want things to be like an outline (and as flexible as possible). 
+So when more interfaces and classes will be added, but the existing codes should not change (much).
+
+2. If you have any questions or comments, feel free to ask/email me. I won't bite.
+
+3. My English is not excellent and my comment is poorly done. 
+If you found an error and it's not in the comment (aka it's a piece of code or names), 
+you probably want to inform the person responsible (tester or whoever)
+so they can correct it without bombing everyone's codes.
+
+Note: I'll try to get the hierarchy done by 11pm 10/30/2012. 
+After that I'll try to make a visual hierarchy of things.
+Everything should be done (v 0.1) by 11.59pm.
+If not, I'll do until it's done.

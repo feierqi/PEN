@@ -1,0 +1,10 @@
+	<div class="popover short" id="deleteCategory">
+		<div class="topArrow"></div>
+		<h1>Delete Category</h1>
+		<div class="popoverContent">
+			<form method="post" action="deleteCategory">
+				<p>There are examples in this category. Do you still want to delete the category?</p>
+				<a href="javascript:deleteCategory();"><input type="button" class="button green" value="Delete" /></a>
+			</form>
+		</div>
+	</div>

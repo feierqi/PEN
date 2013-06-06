@@ -1,0 +1,16 @@
+	<div class="sheet" id="duplicateIntoCategories">
+		<a href="javascript: closeModal();"><div class="close"></div></a>
+		<h1>Duplicate Example</h1>
+		<div class="modalContent">
+			<form action="duplicateCode" method="post">
+				<input type="hidden" name="eid" value="<%=id%>"/>
+				<input type="hidden" name="uid" value="<%if (user!=null) {%><%=user.getLoginName()%><%}%>"/>
+				<p>Select categories to duplicate this example into:</p>
+				<%List<ICategory> cats = webcon.getCategories(); %>
+				<% for (ICategory c : cats) { %>
+					<p><input type="checkbox" name="cids" value="<%=c.getId() %>"/> <%=webcon.escapeHtml(c.getTitle()) %></p>
+				<%} %>
+				<input type="submit" class="button green" value="Duplicate" />
+			</form>
+		</div>
+	</div>

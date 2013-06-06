@@ -1,0 +1,14 @@
+	<div class="sheet" id="signUp">
+		<a href="javascript: closeModal();"><div class="close"></div></a>
+		<h1>Sign Up</h1>
+		<div class="modalContent">
+			<p class="error"></p>
+			<form action="addUser" method="post" onsubmit="return checkSignUpSubmit();">
+			<div class="input"><input type="text" name="loginname" /></div>
+			<div class="input"><input type="text" name="displayname" /></div>
+			<div class="input"><input type="password" name="password" /></div>
+			<div class="input"><input type="password" name="confirm_password" /></div>
+			<input type="submit" class="button green" value="Create Account" />
+			</form>
+		</div>
+	</div>

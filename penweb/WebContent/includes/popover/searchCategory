@@ -1,0 +1,18 @@
+	<div class="popover short" id="searchCategory">
+		<div class="topArrow"></div>
+		<h3>Search Category</h3>
+		<div class="popoverContent">
+			<form action="search" method="post">
+				Language: 
+				<% List<String> LangList = webcon.getLangList(user); %>
+				<select name="lang" >
+					<option value='' selected="selected"><%if(LangList.size()==0) {%>No languages...<%} else {%>Choose one...<%}%></option>
+					<% for (int i=0;i<LangList.size();i++) {%>
+					<option><%=webcon.escapeHtml(LangList.get(i))%></option>
+					<% } %>
+				</select>
+				<p></p>
+				<input type="submit" class="button green" value="Search" />
+			</form>
+		</div>
+	</div>
